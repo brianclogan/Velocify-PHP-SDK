@@ -17,7 +17,7 @@ final class AgentsTest extends TestCase {
 	 */
 	public function setup() {
 		$this->leads = null;
-		$this->velocify = new \CollingMedia\Velocify\Velocify([
+		$this->velocify = new \darkgoldblade01\Velocify\Velocify([
 		    "username" => getenv('VELOCIFY_USERNAME'),
             "password" => getenv('VELOCIFY_PASSWORD')
 		]);

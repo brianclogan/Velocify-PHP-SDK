@@ -6,7 +6,7 @@
  * Time: 7:44 PM
  */
 
-namespace CollingMedia\Velocify;
+namespace darkgoldblade01\Velocify;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;

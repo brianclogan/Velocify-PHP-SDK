@@ -1,17 +1,17 @@
 {
-    "name": "collingmedia/Velocify",
+    "name": "darkgoldblade01/Velocify",
     "description": "Velocify PHP API - an easy to use version of the PHP Velocify API using GuzzleHTTP.",
     "keywords": [
         "Velocify",
         "php",
         "sdk"
     ],
-    "homepage": "http://collingmedia.com",
+    "homepage": "http://github.com/darkgoldblade01",
     "license": "",
     "authors": [
         {
-            "name": "Colling Media",
-            "homepage": "https://github.com/colling-media"
+            "name": "Brian Logan",
+            "homepage": "https://github.com/darkgoldblade01"
         }
     ],
     "require": {
@@ -29,9 +29,9 @@
         "wanfeiyy/dd": "^1.0"
     },
     "autoload": {
-        "psr-4": { "CollingMedia\\Velocify\\" : "src/" }
+        "psr-4": { "darkgoldblade01\\Velocify\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "CollingMedia\\Velocify\\" : "src/" }
+        "psr-4": { "darkgoldblade01\\Velocify\\" : "src/" }
     }
 }
