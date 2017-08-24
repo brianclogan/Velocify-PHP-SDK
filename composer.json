@@ -1,5 +1,5 @@
 {
-    "name": "darkgoldblade01/Velocify",
+    "name": "darkgoldblade01/velocify-php-sdk",
     "description": "Velocify PHP API - an easy to use version of the PHP Velocify API using GuzzleHTTP.",
     "keywords": [
         "Velocify",
