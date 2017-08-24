@@ -20,7 +20,7 @@ PHP 7.0 and later
 To install the bindings via [Composer](http://getcomposer.org/):
 
 ```
-composer require darkgoldblade01/velocify-php-sdk
+composer require darkgoldblade01/velocify
 ```
 
 
