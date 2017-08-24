@@ -57,7 +57,7 @@ final class LeadsTest extends TestCase {
 	 * @return SimpleXmlReader|Response
 	 */
 	public function testGetModifiedLeads() {
-		$response = $this->velocify->leads()->listModifiedLeads();
+		$response = $this->velocify->leads()->listModifiedLeads(30);
 		$count = 0;
 		foreach($response->path('Leads/Lead') AS $lead) {
 			$count++;
