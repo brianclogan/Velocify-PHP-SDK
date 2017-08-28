@@ -10,7 +10,6 @@ namespace darkgoldblade01\Velocify;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
-use SimpleXmlReader\SimpleXmlReader;
 
 /**
  * Class Velocify
@@ -119,7 +118,7 @@ class Velocify {
 	 * @param array $options The options you need for the GuzzleHTTP request.
 	 * @param bool $array Return array, or the request object? (true for array, false for request object)
 	 *
-	 * @return Response|SimpleXmlReader
+	 * @return Response|array|object
 	 */
 	protected function send(string $method, string $url, array $options = [], $array = true) {
         if(isset($options['query'])) {
@@ -129,7 +128,7 @@ class Velocify {
 		if(!$array) {
 			return $request;
 		} else {
-			return SimpleXmlReader::openFromString( $request->getBody()->getContents() );
+			return json_decode(json_encode(simplexml_load_string(( $request->getBody()->getContents() ))));
 		}
 	}
 }
