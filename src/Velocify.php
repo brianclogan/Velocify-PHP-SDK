@@ -119,7 +119,7 @@ class Velocify {
 	 * @param array $options The options you need for the GuzzleHTTP request.
 	 * @param bool $array Return array, or the request object? (true for array, false for request object)
 	 *
-	 * @return Response|SimpleXmlReader
+	 * @return Response|string
 	 */
 	protected function send(string $method, string $url, array $options = [], $array = true) {
         if(isset($options['query'])) {
@@ -129,7 +129,7 @@ class Velocify {
 		if(!$array) {
 			return $request;
 		} else {
-			return SimpleXmlReader::openFromString( $request->getBody()->getContents() );
+			return $request->getBody()->getContents();
 		}
 	}
 }
